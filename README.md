@@ -1,6 +1,6 @@
 # Trybe - Exercícios
 
-:rocket: :green_heart: Este repositório contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/sauloam/)__ durante minha tragetória na [Trybe](https://www.betrybe.com/) :rocket: :green_heart:
+:rocket: :green_heart: Este repositório contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/in/sauloam/)__ durante minha trajetória na [Trybe](https://www.betrybe.com/) :rocket: :green_heart:
 
 >"O programa de formação conta com mais de 1.500 horas de aulas, aborda os Fundamentos de Desenvolvimento Web, Front-End, Back-end e Ciência da computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais."
 
