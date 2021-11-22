@@ -4,7 +4,7 @@
 
 >"O programa de formação conta com mais de 1.500 horas de aulas, aborda os Fundamentos de Desenvolvimento Web, Front-End, Back-end e Ciência da computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais."
 
-## Fundamentos de Desenvolvimento Web
+## Fundamentos do Desenvolvimento Web
 
 ##### Bloco 1: [Unix, Bash e Shell Script](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-01-unix-bash-e-shell-script)
 - [x] 1.3 - Fundamentos do Desenvolvimento Web
