@@ -12,12 +12,12 @@
 - [x] 1.3 - Unix & Bash - Parte 1
 - [x] 1.4 - Unix & Bash - Parte 2
 
-##### Bloco 2: [Git, GitHub e Internet](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-02-git-github-e-internet/dia-2-entendendo-os-comandos)
+##### Bloco 2: [Git, GitHub e Internet](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-02-git-github-e-internet)
 - [x] 2.1 - Git & GitHub  - O que é e para que serve
 - [x] 2.2 - Git & GitHub - Entendendo os comandos
 - [x] 2.3 - Internet - Entendendo como ela funciona
 
-##### Bloco 3: [Introdução à HTML e CSS](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-03-HTML-e-CSS/dia-1-html-css-estruturas-de-pagina)
+##### Bloco 3: [Introdução à HTML e CSS](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-03-HTML-e-CSS)
 - [x] 3.1 - Introdução - HTML & CSS
 - [x] 3.1 - HTML & CSS - Estruturas de página
 - [ ] 3.2 - HTML & CSS - Primeiros passos em CSS
