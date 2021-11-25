@@ -1,43 +1,6 @@
-*{
-  list-style: none;
-}
-h1 {
-  text-align: center;
-}
-h3{
-  text-align: center;
-}
-.rank{
-  margin-left: 320px;
+table, th, td {
+  border:1px solid black;
 }
 
-.first {
-  background-color: rgb(235, 200, 84);
-  font-size: 20px;
-  height: 50px;
-  text-align: center;
-  width: 200px;
-  display: block;
-  margin-left: 200px;
-}
 
-.second {
-  background-color: rgb(219, 219, 219);
-  font-size: 20px;
-  height: 50px;
-  text-align: center;
-  width: 300px;
-  display: inline-block;
-}
-
-.third {
-  background-color: rgb(170, 142, 106);
-  font-size: 20px;
-  height: 50px;
-  text-align: center;
-  width: 300px;
-  display: inline-block;
-}
-li{
-  display: inline-block;
-}
+/* https://www.aquaa3.com.br/curiosidades-camarao-mantis/ */
