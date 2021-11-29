@@ -12,10 +12,15 @@ body{
   background-color: yellow;
   padding: 20px;
   text-align: center;
+  display: inline-block;
 }
 .menu-topo{
   background-color: rgb(0, 128, 0);
   text-align: center;
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  clear: both;
 }
 .menu-topo ul li{
   display: inline-block;
