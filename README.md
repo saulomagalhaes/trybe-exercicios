@@ -6,7 +6,7 @@
 
 ## Fundamentos do Desenvolvimento Web
 
-##### Bloco 1: [Unix, Bash e Shell Script](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-01-unix-bash-e-shell-script)
+##### Bloco 1: [Unix, Bash e Shell Script](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-01-unix-%26-bash)
 - [x] 1.3 - Fundamentos do Desenvolvimento Web
 - [x] 1.3 - Introdução - Unix & Shell
 - [x] 1.3 - Unix & Bash - Parte 1
