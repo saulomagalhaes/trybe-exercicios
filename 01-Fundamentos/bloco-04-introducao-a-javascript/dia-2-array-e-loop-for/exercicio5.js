@@ -5,8 +5,6 @@ let maiorValor = 0;
 for(let verifica of numbers){
   if(verifica > maiorValor){
     maiorValor = verifica
-  } else {
-    maiorValor = maiorValor
   }
 }
 console.log(maiorValor)

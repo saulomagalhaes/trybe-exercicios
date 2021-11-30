@@ -5,8 +5,6 @@ let menorNumero = Infinity;
 for (let number of numbers) {
   if (number < menorNumero) {
     menorNumero = number
-  } else {
-    menorNumero = menorNumero
   }
 }
 console.log(menorNumero) 
