@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* CABEÇALHO E MENU */
+.cabecalho-topo{
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.menu-topo{
+  background-color: rgb(0, 128, 0);
+  text-align: center;
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  clear: both;
+}
+.menu-topo ul li{
+  display: inline-block;
+  padding:10px;
+  list-style: none;
+  color: white;
+}
+/* ----------------- */
+h2, h3{
+  text-align: center;
+  padding: 20px 10px;
+}
+p{
+  text-align: justify;
+  text-align:initial;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border:1px solid black;
+  margin: 0 auto;
+}
+.section2 img, .section3 img{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+}
+footer{
+  text-align: center;
+  margin-top: 30px;
+}
+
