@@ -62,11 +62,11 @@
     let elementH1 = document.createElement('h1');
     elementH1.innerText = 'Exercício 5.2 - JavaScript DOM'
     document.body.appendChild(elementH1)
-   
+
     let elementMain = document.createElement('main');
     elementMain.className = 'main-content'
     document.body.appendChild(elementMain)
-    
+
     let elementSectionCenter = document.createElement('section')
     elementSectionCenter.className = 'center-content'
     elementMain.appendChild(elementSectionCenter)
@@ -88,8 +88,15 @@
     imagemLeft.src = 'https://picsum.photos/200'
     sectionLeft.appendChild(imagemLeft)
 
-    
-    
+    let listaUl = document.createElement('ul')
+    sectionRight.appendChild(listaUl)
+    let arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+    for (let index = 0; index < arrayNumbers.length; index += 1) {
+      let listaLi = document.createElement('li')
+      listaLi.innerHTML = arrayNumbers[index]
+      listaUl.appendChild(listaLi)
+
+    }
   </script>
 </body>
 
