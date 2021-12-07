@@ -59,17 +59,34 @@
 
 <body>
   <script>
-    let h1 = document.createElement('h1');
-    h1.innerText = 'Exercício 5.2 - JavaScript DOM'
-    document.body.appendChild(h1)
+    let elementH1 = document.createElement('h1');
+    elementH1.innerText = 'Exercício 5.2 - JavaScript DOM'
+    document.body.appendChild(elementH1)
    
-    let main = document.createElement('main');
-    main.className = 'main-content'
-    document.body.appendChild(main)
+    let elementMain = document.createElement('main');
+    elementMain.className = 'main-content'
+    document.body.appendChild(elementMain)
     
-    let section = document.createElement('section')
-    section.className = 'center-content'
-    main.appendChild(section)
+    let elementSectionCenter = document.createElement('section')
+    elementSectionCenter.className = 'center-content'
+    elementMain.appendChild(elementSectionCenter)
+
+    let paragrafo = document.createElement('p')
+    paragrafo.innerText = 'Saulo'
+    elementSectionCenter.appendChild(paragrafo)
+
+    let sectionLeft = document.createElement('section')
+    sectionLeft.className = 'left-content'
+    elementMain.appendChild(sectionLeft)
+
+    let sectionRight = document.createElement('section')
+    sectionRight.className = 'right-content'
+    elementMain.appendChild(sectionRight)
+
+    let imagemLeft = document.createElement('img')
+    imagemLeft.className = 'small-image'
+    imagemLeft.src = 'https://picsum.photos/200'
+    sectionLeft.appendChild(imagemLeft)
 
     
     
