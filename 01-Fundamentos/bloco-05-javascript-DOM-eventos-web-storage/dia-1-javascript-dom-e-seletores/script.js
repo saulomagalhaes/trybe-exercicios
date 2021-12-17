@@ -1,21 +1,21 @@
-const cabecalho = document.getElementById('header-container')
-cabecalho.style.backgroundColor = 'green'
+// CABEÇALHO
+const header = document.getElementById('header-container');
+header.style.background = 'green'
 
-const urgente = document.getElementsByClassName('emergency-tasks')
-urgente[0].style.backgroundColor = 'pink'
+// EMERGENCY TASKS
+const emergencyTasks = document.querySelector('.emergency-tasks');
+emergencyTasks.style.background = 'pink'
 
-const urgImport = document.querySelectorAll('.emergency-tasks h3')
-for(let index = 0; index < urgImport.length; index += 1){
-  urgImport[index].style.backgroundColor = 'rgb(165, 0, 243)'
+const h3Emergency = document.querySelectorAll('.emergency-tasks h3');
+for (let i of h3Emergency) {
+  i.style.background = 'red'
 }
 
-const noUrgent = document.getElementsByClassName('no-emergency-tasks')
-noUrgent[0].style.backgroundColor = '#f9db5e'
+// NO EMERGENCY TASKS
+const noEmergencyTasks = document.querySelector('.no-emergency-tasks');
+noEmergencyTasks.style.background = 'yellow'
 
-const noUrgImport = document.querySelectorAll('.no-emergency-tasks h3')
-for(let index = 0; index < noUrgImport.length; index += 1){
-  noUrgImport[index].style.backgroundColor= '#232525'
+const h3NoEmergency = document.querySelectorAll('.no-emergency-tasks h3');
+for (let i of h3NoEmergency) {
+  i.style.background = 'black'
 }
-
-const rodape = document.getElementById('footer-container')
-rodape.style.backgroundColor = '#003533'
