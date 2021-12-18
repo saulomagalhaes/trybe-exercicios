@@ -40,7 +40,8 @@ section {
   background-color: blue;
   width: 60%;
   margin-left: auto;
-  margin-right: 0;
+  /* REQ.4 */
+  margin-right: auto;
 }
 
 .main-content .description {
