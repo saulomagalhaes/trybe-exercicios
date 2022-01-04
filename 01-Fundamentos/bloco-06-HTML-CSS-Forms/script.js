@@ -15,8 +15,10 @@ window.onload = function () {
 
   //VALIDACAO DA DATA
   const submitBtn = document.querySelector('.submit-btn');
+  let validate
 
   function validateData() {
+    validate = true;
     const date = document.querySelector('#date');
     const valueDate = date.value;
     const regex = /\d{2}\/\d{2}\/\d{4}$/
@@ -27,37 +29,30 @@ window.onload = function () {
       const year = parseInt(numbers[2]);
       if (day < 0 || day > 31) {
         alert('Dia Inválido')
+        validate = false;
       }
       if (month < 0 || month > 12) {
         alert('Mês Inválido')
+        validate = false;
       }
       if (year < 1500 || year > 2022) {
         alert('Ano Inválido')
+        validate = false;
       }
     } else {
       alert('Formato da Data inválido')
+      validate = false;
     }
   }
 
   function defaultAll(event) {
     event.preventDefault();
     validateData();
+    if (validate === true) {
+      document.getElementById('myForm').submit();
+    }
   }
   submitBtn.addEventListener('click', defaultAll);
-
-  //BOTAO LIMPAR
-  const clean = document.querySelector('.clean-btn');
-  const inputs = document.querySelectorAll('input');
-  const textArea = document.querySelector('textarea');
-
-  clean.addEventListener('click', function () {
-    for (let i of inputs) {
-      i.value = ''
-
-    }
-    textArea.value = ''
-  })
-
 
 
 

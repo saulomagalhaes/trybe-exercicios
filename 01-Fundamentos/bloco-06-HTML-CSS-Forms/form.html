@@ -12,12 +12,12 @@
 <body>
   <header>
     <h1>Formulário de Currículo</h1>
-    <p>Preencha os dados abaixo:</p>
   </header>
   <main>
-    <form action="" method='GET'>
+    <form id="myForm" action="" method='GET'>
       <div class='form-box'>
         <fieldset>
+          <legend>Preencha os dados abaixo</legend>
           <div class="line-content">
             <input type="text" name="name" id="input-name" maxlength="40" required placeholder="Nome">
           </div>
@@ -48,8 +48,8 @@
       </div>
       <div class="form-box">
         <fieldset>
+          <legend>Resumo do currículo:</legend>
           <div class="line-content">
-            <p>Resumo do currículo:</p>
             <textarea name="abstract" id="abstract" cols="30" rows="10" maxlength="1000" required></textarea>
           </div>
           <div class="line-content">
@@ -64,7 +64,7 @@
           </div>
         </fieldset>
         <button type="submit" class="submit-btn">Enviar</button>
-        <button type="button" class="clean-btn">Limpar</button>
+        <button type="reset" class="clean-btn">Limpar</button>
       </div>
     </form>
   </main>
