@@ -6,51 +6,51 @@
 
 ## Fundamentos do Desenvolvimento Web
 
-##### Bloco 1: [Unix, Bash e Shell Script](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-01-unix-%26-bash)
-- [x] 1.3 - Fundamentos do Desenvolvimento Web
-- [x] 1.3 - Introdução - Unix & Shell
-- [x] 1.3 - Unix & Bash - Parte 1
-- [x] 1.4 - Unix & Bash - Parte 2
+##### [Bloco 01:Unix, Bash e Shell Script](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-01-unix-%26-bash)
+- [x] 1.3 - _Fundamentos do Desenvolvimento Web_
+- [x] 1.3 - _Introdução - Unix & Shell_
+- [x] 1.3 - _Unix & Bash - Parte 1_
+- [x] 1.4 - _Unix & Bash - Parte 2_
 
-##### Bloco 2: [Git, GitHub e Internet](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-02-git-github-e-internet)
-- [x] 2.1 - Git & GitHub  - O que é e para que serve
-- [x] 2.2 - Git & GitHub - Entendendo os comandos
-- [x] 2.3 - Internet - Entendendo como ela funciona
+##### [Bloco 02: Git, GitHub e Internet](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-02-git-github-e-internet)
+- [x] 2.1 - _Git & GitHub  - O que é e para que serve_
+- [x] 2.2 - _Git & GitHub - Entendendo os comandos_
+- [x] 2.3 - _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: [Introdução à HTML e CSS](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-03-HTML-e-CSS)
-- [x] 3.1 - Introdução - HTML & CSS
-- [x] 3.1 - HTML & CSS - Estruturas de página
-- [x] 3.2 - HTML & CSS - Primeiros passos em CSS
-- [x] 3.3 - HTML & CSS - Seletores e posicionamento
-- [x] 3.4 - HTML Semântico
-- [x] 3.5 - Projeto - Lessons Learned
+##### [Bloco 03: Introdução à HTML e CSS](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-03-HTML-e-CSS)
+- [x] 3.1 - _Introdução - HTML & CSS_
+- [x] 3.1 - _HTML & CSS - Estruturas de página_
+- [x] 3.2 - _HTML & CSS - Primeiros passos em CSS_
+- [x] 3.3 - _HTML & CSS - Seletores e posicionamento_
+- [x] 3.4 - _HTML Semântico_
+- [x] 3.5 - _Projeto - Lessons Learned_
 
-##### Bloco 4: [Bloco 4 - Introdução à JavaScript e Lógica de Programação](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-04-introducao-a-javascript)
-- [x] 4.1 - Primeiros passos
-- [x] 4.2 - JavaScript - Array e loop For
-- [x] 4.3 - JavaScript - Lógica de Programação e Algoritmos
-- [x] 4.4 - JavaScript - Objetos e funções
-- [x] 4.5 - Projeto - Playground Functions
+##### [Bloco 04: Introdução à JavaScript e Lógica de Programação](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-04-introducao-a-javascript)
+- [x] 4.1 - _Primeiros passos_
+- [x] 4.2 - _JavaScript - Array e loop For_
+- [x] 4.3 - _JavaScript - Lógica de Programação e Algoritmos_
+- [x] 4.4 - _JavaScript - Objetos e funções_
+- [x] 4.5 - _Projeto - Playground Functions_
 
-#### [Bloco 05: JavaScript - DOM, Eventos e Web Storage](https://github.com/raphaelalmeidamartins/trybe_exercicios/tree/main/1_fundamentos-do-desv-web/b05_javascript-DOM-eventos-e-web-storage)
-- [x] 05.01 — _JavaScript - DOM e seletores_
-- [x] 05.02 — _JavaScript - Trabalhando com elementos_
-- [x] 05.03 — _JavaScript - Eventos_
-- [x] 05.04 — _JavaScript - Web Storage_
-- [x] 05.05 — _[Projeto - Pixels Art](https://github.com/raphaelalmeidamartins/project-pixels-art)_
-- [x] 05.06 — _[Projeto - To-do List](https://github.com/raphaelalmeidamartins/project-to-do-list)_
-- [x] 05.07 — _[(Bônus) Projeto - Meme Generator](https://github.com/raphaelalmeidamartins/project-meme-generator)_
-- [x] 05.07 — _[(Bônus) Projeto - Color Guess](https://github.com/raphaelalmeidamartins/project-color-guess)_
-- [x] 05.07 — _[(Bônus) Projeto - Mystery Letter](https://github.com/raphaelalmeidamartins/project-mystery-letter)_
+#### [Bloco 05: JavaScript - DOM, Eventos e Web Storage]()
+- [x] 05.01 - _JavaScript - DOM e seletores_
+- [x] 05.02 - _JavaScript - Trabalhando com elementos_
+- [x] 05.03 - _JavaScript - Eventos_
+- [x] 05.04 - _JavaScript - Web Storage_
+- [x] 05.05 - _[Projeto - Pixels Art]()_
+- [x] 05.06 - _[Projeto - To-do List]()_
+- [x] 05.07 - _[(Bônus) Projeto - Meme Generator]()_
+- [x] 05.07 - _[(Bônus) Projeto - Color Guess]()_
+- [x] 05.07 - _[(Bônus) Projeto - Mystery Letter]()_
 
 #### [Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo]()
-- [ ] 06.01 — _HTML & CSS - Forms_
-- [ ] 06.02 — _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 06.03 — _Introdução - CSS Flexbox_
-- [ ] 06.03 — _CSS Flexbox - Parte 1_
-- [ ] 06.04 — _CSS Flexbox - Parte 2_
-- [ ] 06.05 — _CSS Responsivo - Mobile First_
-- [ ] 06.06 — _[Projeto - Trybewarts]()_
+- [x] 06.01 - _HTML & CSS - Forms_
+- [x] 06.02 - _Bibliotecas JavaScript e Frameworks CSS_
+- [ ] 06.03 - _Introdução - CSS Flexbox_
+- [ ] 06.03 - _CSS Flexbox - Parte 1_
+- [ ] 06.04 - _CSS Flexbox - Parte 2_
+- [ ] 06.05 - _CSS Responsivo - Mobile First_
+- [ ] 06.06 - _[Projeto - Trybewarts]()_
 
 #### [Bloco 07: Introdução à JavaScript ES6 e Testes Unitários]()
 - [ ] 07.01 — _JavaScript ES6 - let, const, arrow functions e template literals_
