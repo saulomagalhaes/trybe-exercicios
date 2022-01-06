@@ -17,7 +17,7 @@
       <h1 class="text-center">Formulário de Currículo</h1>
     </header>
 
-    <form action="">
+    <form id="myForm" action="">
       <div class="mb-3 mt-3">
         <label for="input-name" class="form-label">Nome:</label>
         <input type="text" id="input-name" class="form-control" name="name" maxlength="40" required
@@ -67,27 +67,30 @@
         </div>
       </div>
 
+      <div class="form-floating">
+        <textarea id="abstract" class="form-control" placeholder="Digite seu resumo" style="height:150px"></textarea>
+        <label for="abstract">Faça um resumo sobre você:</label>
+      </div>
+
       <div class="mb-3 mt-3">
-        <label for="abstract">Digite aqui:</label>
-        <textarea id="abstract" class="form-control" name="abstract" cols="30" rows="10" maxlength="1000" required>
-      </textarea>
+        <label for="abstract" class="form-label">Cargo:</label>
+        <input type="text" class="form-control" name="office" id="office" maxlength="40" placeholder="Digite seu cargo"
+          required></input>
       </div>
 
-
-
-      <div class="line-content">
-        <input type="text" name="office" id="office" maxlength="40" placeholder="Cargo" required></input>
-      </div>
-      <div class="line-content">
-        <input type="text" name="office-description" id="office-description" maxlength="500" required
-          placeholder="Descrição do cargo">
-      </div>
-      <div class="line-content">
-        <input type="text" name="date" id="date" placeholder="Data" required></input>
+      <div class="mb-3 mt-3">
+        <label for="abstract" class="form-label">Descrição do cargo:</label>
+        <input type="text" class="form-control" name="office-description" id="office-description" maxlength="500"
+          required placeholder="Descreva seu cargo">
       </div>
 
-      <button type="submit" class="submit-btn">Enviar</button>
-      <button type="reset" class="clean-btn">Limpar</button>
+      <div class="mb-3 mt-3">
+        <label for="abstract" class="form-label">Data:</label>
+        <input type="text" class="form-control" name="date" id="date" placeholder="Inorme a data" required></input>
+      </div>
+
+      <button type="submit" class="submit-btn btn btn-success ">Enviar</button>
+      <button type="reset" class="clean-btn btn btn-danger">Limpar</button>
     </form>
   </div>
   <script src="./script.js"></script>
