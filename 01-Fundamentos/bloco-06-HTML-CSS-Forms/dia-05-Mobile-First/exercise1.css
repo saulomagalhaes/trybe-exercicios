@@ -1,0 +1,100 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* MOBILE */
+  --h1-mobile: 1.6rem;
+  --h2-mobile: 1.4rem;
+  --text-mobile: 1.2rem;
+  /* TABLET */
+  --h1-tablet: 1.8rem;
+  --h2-tablet: 1.6rem;
+  --text-tablet: 1.4rem;
+}
+
+.container {
+  display: flex;
+  margin: 0 0.5rem;
+}
+
+h1 {
+  font-size: var(--h1-mobile);
+}
+
+article {
+  margin: 0 0.5rem;
+}
+
+p {
+  font-size: var(--text-mobile);
+  text-align: justify;
+}
+
+h2 {
+  font-size: var(--h2-mobile);
+  margin: 0 0.5rem;
+}
+
+.section-figures {
+  flex-direction: column;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: .8em;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: var(--h1-tablet);
+  }
+
+  p {
+    font-size: var(--text-tablet);
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: var(--h2-tablet);
+    margin: 0 0.5rem;
+  }
+
+  .section-figures {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  figure {
+    width: 32%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  figcaption {
+    font-size: 1.0rem;
+  }
+
+}
