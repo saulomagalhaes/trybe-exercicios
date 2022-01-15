@@ -1,0 +1,17 @@
+{
+  "name": "dia-03-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-trybe-fundamentals": "^1.1.1",
+    "jest": "^27.4.7"
+  },
+  "dependencies": {}
+}
