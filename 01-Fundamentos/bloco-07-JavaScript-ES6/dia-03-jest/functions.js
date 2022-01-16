@@ -25,5 +25,62 @@ const myFizzBuzz = (num) => {
   return num;
 };
 
+const encode = (string) => {
+  const array = string.split('');
+  let novaArray = '';
+  for (let letra of array) {
+    switch (letra) {
+      case 'a':
+        novaArray += '1';
+        break;
+      case 'e':
+        novaArray += '2';
+        break;
+      case 'i':
+        novaArray += '3';
+        break;
+      case 'o':
+        novaArray += '4';
+        break;
+      case 'u':
+        novaArray += '5';
+        break;
+      case ' ':
+        novaArray += '';
+      default:
+        novaArray += letra;
+    }
+  }
+  return novaArray;
+};
+
+const decode = (string) => {
+  const array = string.split('');
+  let novaArray = '';
+  for (let numero of array) {
+    switch (numero) {
+      case '1':
+        novaArray += 'a';
+        break;
+      case '2':
+        novaArray += 'e';
+        break;
+      case '3':
+        novaArray += 'i';
+        break;
+      case '4':
+        novaArray += 'o';
+        break;
+      case '5':
+        novaArray += 'u';
+        break;
+      case ' ':
+        novaArray += '';
+      default:
+        novaArray += numero;
+    }
+  }
+  return novaArray;
+};
 // implemente seus testes aqui
-module.exports = { sum, myRemove, myFizzBuzz };
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode };

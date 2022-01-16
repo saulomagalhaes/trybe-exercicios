@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz } = require('./functions');
+const { sum, myRemove, myFizzBuzz, encode, decode } = require('./functions');
 
 /* PARTE 1 */
 describe('Função de somar', () => {
@@ -51,5 +51,49 @@ describe('- A função myFizzBuzznum recebe um número num e retorna "fizzbuzz" 
   // eslint-disable-next-line max-len
   it('Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado', () => {
     expect(false).toBe(myFizzBuzz('5'));
+  });
+});
+
+/* PARTE 4 */
+describe('Para as funções encode e decode crie os seguintes testes em Jest:', () => {
+  it('Teste se o encode é uma função', () => {
+    expect(typeof encode).toBe('function');
+  });
+  it('Teste se o decode é uma função', () => {
+    expect(typeof decode).toBe('function');
+  });
+  it('Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
+    expect(encode('ana')).toBe('1n1');
+  });
+  it('Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
+    expect(encode('ela')).toBe('2l1');
+  });
+  it('Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
+    expect(encode('ivo')).toBe('3v4');
+  });
+  it('Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
+    expect(encode('ovos')).toBe('4v4s');
+  });
+  it('Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
+    expect(encode('unha')).toBe('5nh1');
+  });
+
+  it('Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente', () => {
+    expect(decode('1n1')).toBe('ana');
+  });
+  it('Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente;', () => {
+    expect(decode('2l1')).toBe('ela');
+  });
+  it('Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente;', () => {
+    expect(decode('3v4')).toBe('ivo');
+  });
+  it('Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente;', () => {
+    expect(decode('4v4s')).toBe('ovos');
+  });
+  it('Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente', () => {
+    expect(decode('5nh1')).toBe('unha');
+  });
+  it('Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro', () => {
+    expect(encode('trybe').length).toBe('tryb2'.length);
   });
 });
