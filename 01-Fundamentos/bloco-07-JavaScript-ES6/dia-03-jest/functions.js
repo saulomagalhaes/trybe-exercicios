@@ -82,5 +82,21 @@ const decode = (string) => {
   }
   return novaArray;
 };
-// implemente seus testes aqui
-module.exports = { sum, myRemove, myFizzBuzz, encode, decode };
+
+const techList = (array, name) => {
+  if (array.length !== 0) {
+    const newArray = array.sort();
+    let object = [];
+    for (let index = 0; index < newArray.length; index += 1) {
+      let newObj = {};
+      newObj['tech'] = newArray[index];
+      newObj['name'] = name;
+      object.push(newObj);
+    }
+    return object;
+  } else {
+    return 'Vazio!';
+  }
+};
+
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList };
