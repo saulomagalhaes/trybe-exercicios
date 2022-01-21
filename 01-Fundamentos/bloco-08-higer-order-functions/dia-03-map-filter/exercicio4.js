@@ -61,11 +61,12 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+// 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
 
-const genres = () =>
-  books.filter(
-    (item) => item.genre === "Fantasia" || item.genre === "Ficção Científica"
-  );
-
-console.log(genres());
+const oldBooksOrdered = () => {
+  const year = new Date().getFullYear();
+  return books
+    .filter((book) => book.releaseYear < year - 60)
+    .sort((a, b) => a.releaseYear - b.releaseYear);
+};
+console.log(oldBooksOrdered());
