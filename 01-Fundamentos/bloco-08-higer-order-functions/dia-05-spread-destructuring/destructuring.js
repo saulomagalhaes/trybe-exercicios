@@ -17,9 +17,3 @@ const phrase = ({name, age, nationality, profession, squad, squadInitials}) => {
 }
 
 console.log(phrase(newArr));
-
-// const userAndJob = (name, job) => {
-//   let arr = {...name, ...job};
-//   return arr;
-// };
-// console.log(userAndJob(user, jobInfos))
