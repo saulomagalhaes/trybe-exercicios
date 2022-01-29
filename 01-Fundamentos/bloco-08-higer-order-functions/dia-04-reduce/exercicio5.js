@@ -13,7 +13,7 @@ const names = [
 const containsA = () =>
   names
     .reduce((acc, item) => acc.concat(item))
-    .toLocaleLowerCase()
+    .toLowerCase()
     .replace(/[^a]/g, '').length;
 
 console.log(containsA());
