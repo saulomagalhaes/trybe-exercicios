@@ -1,5 +1,13 @@
 /* App.css */
-.App {
-  background-color: #282c34;
+.Header {
+  color: darkgreen;
   text-align: center;
+}
+.Content{
+  text-align: center;
+  color: blue;
+}
+.Footer {
+  text-align: center;
+  color: purple;
 }
