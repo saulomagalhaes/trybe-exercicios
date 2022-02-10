@@ -1,0 +1,10 @@
+.section-pokemon {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  border: 1px solid black;
+  margin: 5px;
+  ul {
+    list-style-type: none;
+  }
+}
