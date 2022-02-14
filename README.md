@@ -23,54 +23,54 @@
 - [x] 3.2 - _HTML & CSS - Primeiros passos em CSS_
 - [x] 3.3 - _HTML & CSS - Seletores e posicionamento_
 - [x] 3.4 - _HTML Semântico_
-- [x] 3.5 - _Projeto - Lessons Learned_
+- [x] 3.5 - _[Projeto - Lessons Learned](https://github.com/tryber/sd-019-a-project-lessons-learned/pull/19)_
 
 ##### [Bloco 04: Introdução à JavaScript e Lógica de Programação](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-04-introducao-a-javascript)
 - [x] 4.1 - _Primeiros passos_
 - [x] 4.2 - _JavaScript - Array e loop For_
 - [x] 4.3 - _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4.4 - _JavaScript - Objetos e funções_
-- [x] 4.5 - _Projeto - Playground Functions_
+- [x] 4.5 - _[Projeto - Playground Functions](https://github.com/tryber/sd-019-a-project-playground-functions/pull/101)
 
 #### [Bloco 05: JavaScript - DOM, Eventos e Web Storage]()
 - [x] 05.01 - _JavaScript - DOM e seletores_
 - [x] 05.02 - _JavaScript - Trabalhando com elementos_
 - [x] 05.03 - _JavaScript - Eventos_
 - [x] 05.04 - _JavaScript - Web Storage_
-- [x] 05.05 - _[Projeto - Pixels Art]()_
-- [x] 05.06 - _[Projeto - To-do List]()_
-- [x] 05.07 - _[(Bônus) Projeto - Meme Generator]()_
-- [x] 05.07 - _[(Bônus) Projeto - Color Guess]()_
-- [x] 05.07 - _[(Bônus) Projeto - Mystery Letter]()_
+- [x] 05.05 - _[Projeto - Pixels Art](https://github.com/tryber/sd-019-a-project-pixels-art)_
+- [x] 05.06 - _[Projeto - To-do List](https://github.com/tryber/sd-019-a-project-todo-list/pull/82)_
+- [x] 05.07 - _[(Bônus) Projeto - Meme Generator](https://github.com/tryber/sd-019-a-project-meme-generator/pull/34)_
+- [x] 05.07 - _[(Bônus) Projeto - Color Guess](https://github.com/tryber/sd-019-a-project-color-guess/pull/27)_
+- [x] 05.07 - _[(Bônus) Projeto - Mystery Letter](https://github.com/tryber/sd-019-a-project-mistery-letter/pull/38)_
 
-#### [Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo]()
+#### [Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-06-HTML-CSS-Forms)
 - [x] 06.01 - _HTML & CSS - Forms_
 - [x] 06.02 - _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 06.03 - _Introdução - CSS Flexbox_
-- [ ] 06.03 - _CSS Flexbox - Parte 1_
-- [ ] 06.04 - _CSS Flexbox - Parte 2_
-- [ ] 06.05 - _CSS Responsivo - Mobile First_
-- [ ] 06.06 - _[Projeto - Trybewarts]()_
+- [x] 06.03 - _Introdução - CSS Flexbox_
+- [x] 06.03 - _CSS Flexbox - Parte 1_
+- [x] 06.04 - _CSS Flexbox - Parte 2_
+- [x] 06.05 - _CSS Responsivo - Mobile First_
+- [x] 06.06 - _[Projeto - Trybewarts](https://github.com/tryber/sd-019-a-project-trybewarts/pull/110)_
 
-#### [Bloco 07: Introdução à JavaScript ES6 e Testes Unitários]()
-- [ ] 07.01 — _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 07.02 — _JavaScript ES6 - Fluxo de exceção e Objetos_
-- [ ] 07.03 — _Primeiros passos em Jest_
-- [ ] 07.04 — _[Projeto - JavaScript Testes Unitários]()_
+#### [Bloco 07: Introdução à JavaScript ES6 e Testes Unitários](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-07-JavaScript-ES6)
+- [x] 07.01 — _JavaScript ES6 - let, const, arrow functions e template literals_
+- [x] 07.02 — _JavaScript ES6 - Fluxo de exceção e Objetos_
+- [x] 07.03 — _Primeiros passos em Jest_
+- [x] 07.04 — _[Projeto - JavaScript Testes Unitários](https://github.com/tryber/sd-019-a-project-js-unit-tests/pull/61)_
 
-#### [Bloco 08: Higher-Order Functions do JavaScript ES6]()
-- [ ] 08.01 — _JavaScript ES6 - Introdução a Higher-Order Functions_
-- [ ] 08.02 — _JavaScript ES6 - Higher-Order Functions - forEach, find, some, every, sort_
-- [ ] 08.03 — _JavaScript ES6 - Higher-Order Functions - map e filter_
-- [ ] 08.04 — _JavaScript ES6 - Higher-Order Functions - reduce_
-- [ ] 08.05 — _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
-- [ ] 08.06 — _[Projeto - Zoo functions]()_
+#### [Bloco 08: Higher-Order Functions do JavaScript ES6](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-08-higer-order-functions)
+- [x] 08.01 — _JavaScript ES6 - Introdução a Higher-Order Functions_
+- [x] 08.02 — _JavaScript ES6 - Higher-Order Functions - forEach, find, some, every, sort_
+- [x] 08.03 — _JavaScript ES6 - Higher-Order Functions - map e filter_
+- [x] 08.04 — _JavaScript ES6 - Higher-Order Functions - reduce_
+- [x] 08.05 — _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
+- [x] 08.06 — _[Projeto - Zoo functions](https://github.com/tryber/sd-19-a-project-zoo-functions/pull/81)_
 
-#### [Bloco 09: JavaScript e Testes Assíncronos]()
-- [ ] 09.01 — _JavaScript Assíncrono e Callbacks_
-- [ ] 09.02 — _JavaScript Assíncrono - Fetch API e async/await_
-- [ ] 09.03 — _Jest - Testes Assíncronos_
-- [ ] 09.04 — _[Projeto - Carrinho de Compras]()_
+#### [Bloco 09: JavaScript e Testes Assíncronos](https://github.com/saulomagalhaes/trybe-exercicios/tree/main/01-Fundamentos/bloco-09-javascript-ass%C3%ADncrono)
+- [x] 09.01 — _JavaScript Assíncrono e Callbacks_
+- [x] 09.02 — _JavaScript Assíncrono - Fetch API e async/await_
+- [x] 09.03 — _Jest - Testes Assíncronos_
+- [x] 09.04 — _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-019-a-project-shopping-cart/pull/32)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
