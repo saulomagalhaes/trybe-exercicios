@@ -1,63 +1,82 @@
-import React, { Component } from 'react';
-import ImageDog from './components/ImageDog';
-import './App.css';
+import React from "react";
 
-class App extends Component {
-  constructor() {
-    super();
+class App extends React.Component {
+  constructor(props) {
+    super(props);
     this.state = {
-      loading: true,
-      dogUrl: '',
-      savedDogs: [],
+      data: "",
+      name: "",
+      array: []
     };
-    this.fetchDogs = this.fetchDogs.bind(this);
-  }
-
-  async fetchDogs() {
-    this.setState({ loading: true }, async () => {
-      const requestReturn = await fetch(
-        'https://dog.ceo/api/breeds/image/random'
-      );
-      const requestObject = await requestReturn.json();
-      const dataUrlDog = requestObject.message;
-      this.setState({
-        dogUrl: dataUrlDog,
-        loading: false,
-      });
-    });
+    this.fetchDog = this.fetchDog.bind(this);
+    this.saveData = this.saveData.bind(this);
   }
 
   componentDidMount() {
-    this.fetchDogs();
+    if (localStorage.namedDogURL) {
+      const parseStorage = JSON.parse(localStorage.namedDogURL);
+      const lastDog = parseStorage[parseStorage.length - 1].message;
+      this.setState({
+        array: parseStorage,
+        data: { message: lastDog }
+      });
+    } else {
+      this.fetchDog();
+    }
   }
 
-  savedDogs = () => {
-    const { dogUrl } = this.state;
-    this.setState(
-      (prevstate) => ({
-        savedDogs: [...prevstate.savedDogs, dogUrl],
-      }),
-      () => this.fetchDogs()
-    );
-  };
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextState.data.message.includes("terrier")) {
+      return false;
+    }
+    return true;
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.data !== this.state.data) {
+      const dogBreed = this.state.data.message.split("/")[4];
+      alert(dogBreed);
+    }
+  }
+
+  fetchDog() {
+    fetch("https://dog.ceo/api/breeds/image/random")
+      .then(res => res.json())
+      .then(result => this.setState({ data: result }));
+  }
+
+  saveData() {
+    const {
+      data: { message },
+      name,
+      array
+    } = this.state;
+    const dogData = { message, name };
+    const newArray = [...array, dogData];
+    this.setState({ array: newArray });
+    this.setState({ name: "" });
+    localStorage.setItem("namedDogURL", JSON.stringify(newArray));
+  }
 
   render() {
-    const { dogUrl, savedDogs, loading } = this.state;
+    if (this.state.data === "") return "loading...";
     return (
-      <>
+      <div>
+        <p>Doguinhos</p>
+        <button onClick={ this.fetchDog }>Novo doguinho!</button>
         <div>
-          {savedDogs.map((url, index) => (
-            <img key={index} src={url} alt="cao" />
-          ))}
+          <input
+            type="text"
+            value={ this.state.name }
+            onChange={ e => this.setState({ name: e.target.value }) }
+            placeholder="digite o nome do doguinho"
+          />
+          <button onClick={this.saveData}>Salvar doguinho!</button>
         </div>
         <div>
-          {loading ? (
-            <p>{'Loading ...'}</p>
-          ) : (
-            <ImageDog urlDog={dogUrl} savedDogs={this.savedDogs} />
-          )}
+          <img src={ this.state.data.message } alt={ this.state.data.message } />
         </div>
-      </>
+      </div>
     );
   }
 }
