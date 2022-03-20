@@ -75,29 +75,29 @@
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
 #### [Bloco 10: Introdução à React]()
-- [ ] 10.01 — _Introdução - Front-end_
-- [ ] 10.01 — _Introdução - React_
-- [ ] 10.01 — _'Hello, world!' no React!_
-- [ ] 10.02 — _Componentes React_
-- [ ] 10.03 — _[Projeto - Sistema Solar]()_
+- [x] 10.01 — _Introdução - Front-end_
+- [x] 10.01 — _Introdução - React_
+- [x] 10.01 — _'Hello, world!' no React!_
+- [x] 10.02 — _Componentes React_
+- [x] 10.03 — _[Projeto - Sistema Solar]()_
 
 #### [Bloco 11: Componentes com Estado, Eventos e Formulários com React]()
-- [ ] 11.01 — _Componentes com estado e eventos_
-- [ ] 11.02 — _Formulários no React_
-- [ ] 11.03 — _[Projeto - Tryunfo]()_
+- [x] 11.01 — _Componentes com estado e eventos_
+- [x] 11.02 — _Formulários no React_
+- [x] 11.03 — _[Projeto - Tryunfo]()_
 
 #### [Bloco 12: Ciclo de Vida de Componentes e React Router]()
-- [ ] 12.01 — _Ciclo de vida de componentes_
-- [ ] 12.02 — _React Router_
-- [ ] 12.03 — _[Projeto - TrybeTunes]()_
+- [x] 12.01 — _Ciclo de vida de componentes_
+- [x] 12.02 — _React Router_
+- [x] 12.03 — _[Projeto - TrybeTunes]()_
 
 #### [Bloco 13: Metodologias Ágeis]()
-- [ ] 13.01 — _Metodologias Ágeis_
-- [ ] 13.02 — _[Projeto - Front-end Online Store]()_
+- [x] 13.01 — _Metodologias Ágeis_
+- [x] 13.02 — _[Projeto - Front-end Online Store]()_
 
 #### [Bloco 14: Testes automatizados com React Testing Library]()
-- [ ] 14.01 — _RTL - Primeiros passos_
-- [ ] 14.02 — _RTL - Mocks e Inputs_
+- [x] 14.01 — _RTL - Primeiros passos_
+- [x] 14.02 — _RTL - Mocks e Inputs_
 - [ ] 14.03 — _RTL - Testando React Router_
 - [ ] 14.04 — _[Projeto - Testes em React]()_
 
