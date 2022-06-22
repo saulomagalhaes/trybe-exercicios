@@ -56,7 +56,7 @@ const isValid = (firstName, middleName, lastName) => {
 };
 
 const createAuthor = async (firstName, middleName, lastName) =>
-  connection.execute(
+  await connection.execute(
     "INSERT INTO model_example.authors (first_name, middle_name, last_name) VALUES (?,?,?)",
     [firstName, middleName, lastName]
   );

@@ -8,4 +8,7 @@ const connection = mysql.createPool({
   database: "model_example",
 });
 
+// Poderia ser assim:
+// const connection = mysql.createPool("mysql://root:password@db:3306");
+
 module.exports = connection;
