@@ -5,7 +5,7 @@ const validateId = async (req, res, next) => {
   const { id } = req.params;
   try {
     const response = await User.getUser(id);
-    if (!response)
+    if (response.length === 0)
       return res
         .status(404)
         .json({ error: true, message: "Usuário não encontrado" });

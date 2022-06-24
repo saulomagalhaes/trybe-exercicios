@@ -5,6 +5,7 @@ const User = require("../models/User");
 const postUser = require("../middlewares/postUser");
 const getUsers = require("../middlewares/getUsers");
 const getUserId = require("../middlewares/getUserId");
+const putUser = require("../middlewares/putUser");
 
 const router = express.Router();
 
@@ -28,8 +29,9 @@ router.post("/", postUser, async (req, res, next) => {
   }
 });
 
-router.put("/:id", (req, res) => {
-  const { firstName, lastName, email, password } = req.body;
+router.put("/:id", putUser, (req, res) => {
+  const { user } = req;
+  res.status(200).json(user);
 });
 
 module.exports = router;

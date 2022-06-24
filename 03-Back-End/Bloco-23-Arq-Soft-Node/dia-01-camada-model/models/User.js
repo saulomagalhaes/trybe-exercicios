@@ -30,4 +30,13 @@ const createUser = async (firstName, lastName, email, password) => {
   return { id: result.insertId, firstName, lastName, email };
 };
 
-module.exports = { createUser, getAllUser, getUser };
+const editUser = async (id, firstName, lastName, email) => {
+  const query =
+    "UPDATE user SET first_name = ?, last_name = ?, email = ? WHERE id = ?;";
+
+  const abc = await connection.execute(query, [firstName, lastName, email, id]);
+
+  return { id, firstName, lastName, email };
+};
+
+module.exports = { createUser, getAllUser, getUser, editUser };
