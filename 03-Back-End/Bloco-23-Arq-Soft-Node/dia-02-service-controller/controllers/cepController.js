@@ -3,10 +3,9 @@ const cepService = require("../services/cepService");
 const cepController = {
   async getCep(req, res) {
     const { cep } = req.params;
+    const cepformatted = cepService.validateCep(cep);
 
-    const cepformatted = cep.replace("-", "");
-
-    const [result] = await cepService.getCep(cepformatted);
+    const result = await cepService.getCep(cepformatted);
 
     res.status(200).json(result);
   },
