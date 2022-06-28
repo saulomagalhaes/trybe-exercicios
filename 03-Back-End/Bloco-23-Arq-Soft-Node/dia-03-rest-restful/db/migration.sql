@@ -12,4 +12,3 @@ INSERT INTO products (name, brand)
 VALUES ('Cerveja Skol', 'Ambev'),
        ('Monitor AGON', 'AOC'),
        ('MacBook Air', 'Apple');
-SELECT * FROM products;

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --inspect ./src/index.js"
+    "start": "nodemon --inspect ./src/index.js",
+    "compose": "docker-compose down && docker-compose up -d"
   },
   "keywords": [],
   "author": "",
@@ -16,3 +17,4 @@
     "nodemon": "^2.0.18"
   }
 }
+
