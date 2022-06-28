@@ -14,6 +14,8 @@ services:
       timeout: 10s
       retries: 10
       start_period: 1s
+    volumes: 
+      - "./db:/docker-entrypoint-initdb.d"
 
   api:
     image: node:16

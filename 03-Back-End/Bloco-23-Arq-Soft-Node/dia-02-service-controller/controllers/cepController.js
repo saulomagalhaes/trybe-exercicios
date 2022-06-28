@@ -12,6 +12,7 @@ const cepController = {
   async postCep(req, res) {
     const { cep, logradouro, bairro, localidade, uf } =
       await cepService.validateBodyAdd(req.body);
+
     const cepFormatted = cep.replace("-", "");
 
     await cepService.existsCep(cepFormatted);

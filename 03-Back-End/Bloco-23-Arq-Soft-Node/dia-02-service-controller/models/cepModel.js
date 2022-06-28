@@ -1,4 +1,5 @@
 const db = require("./db");
+const fetch = require("node-fetch");
 
 const cepModel = {
   async get(cep) {
@@ -16,6 +17,10 @@ const cepModel = {
       "INSERT INTO ceps (cep, logradouro, bairro, localidade, uf) VALUES (?, ?, ?, ?, ?)";
     await db.execute(query, [cep, logradouro, bairro, localidade, uf]);
     return;
+  },
+  async consultViaCep(cep) {
+    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    return response.json();
   },
 };
 

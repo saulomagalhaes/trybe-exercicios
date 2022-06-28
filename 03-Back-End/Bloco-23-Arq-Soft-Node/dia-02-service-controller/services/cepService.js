@@ -28,18 +28,25 @@ const cepService = {
   ),
   async getCep(cep) {
     const response = await cepModel.get(cep);
-    if (!response) return throwNotFoundError("CEP não encontrado");
+    if (!response) {
+      const result = await cepModel.consultViaCep(cep);
+      if (result.erro) return throwNotFoundError("CEP não encontrado");
+      const data = {
+        cepp: result.cep.replace("-", ""),
+        logradouro: result.logradouro || "null",
+        bairro: result.bairro || "null",
+        localidade: result.localidade,
+        uf: result.uf,
+      };
+      const { cepp, logradouro, bairro, localidade, uf } = data;
+      await cepModel.post(cepp, logradouro, bairro, localidade, uf);
+      return data;
+    }
 
     return response;
   },
   async postCep(cepFormatted, logradouro, bairro, localidade, uf) {
-    const response = await cepModel.post(
-      cepFormatted,
-      logradouro,
-      bairro,
-      localidade,
-      uf
-    );
+    await cepModel.post(cepFormatted, logradouro, bairro, localidade, uf);
   },
   async existsCep(cep) {
     const response = await cepModel.exists(cep);

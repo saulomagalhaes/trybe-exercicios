@@ -4,7 +4,9 @@
   "description": "Aplicação de busca de CEP",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --inspect -r dotenv/config index.js"
+    "start": "nodemon --inspect -r dotenv/config index.js",
+    "compose": "docker-compose down && docker-compose up -d",
+    "test": "mocha ./tests/**/*$NAME*.test.js --exit"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,7 @@
     "express-async-errors": "^3.1.1",
     "joi": "^17.6.0",
     "mysql2": "^2.3.3",
+    "node-fetch": "^2.6.7",
     "nodemon": "^2.0.18"
   }
 }
