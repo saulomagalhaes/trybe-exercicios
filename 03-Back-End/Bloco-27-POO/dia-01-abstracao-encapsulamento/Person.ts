@@ -1,3 +1,5 @@
+import uuid from "uuid";
+
 class Person {
   private _name: string;
   private _birthDate: Date;
@@ -42,5 +44,50 @@ class Person {
       throw new Error("A data de nascimento não pode ser uma data no futuro.");
     if (this.getAge(birthDate) > 120)
       throw new Error("A idade deve ser menor do que 120 anos");
+  }
+}
+
+class Student extends Person {
+  private _enrollment: string  = '';
+  private _examsGrades: number[] = [];
+  private _worksGrades: number[] = [];
+
+  constructor(name: string, birthDate: Date) {
+    super(name, birthDate);
+    this.enrollment = this.generateEnrolment();
+  }
+  get enrollment(): string {
+    return this._enrollment;
+  }
+
+  set enrollment(value: string) {
+    if (value.length < 16) throw new Error('A matrícula deve possuir no mínimo 16 caracteres.');
+
+    this._enrollment = value;
+  }
+
+  get examsGrades(): number[] {
+    return this._examsGrades;
+  }
+
+  set examsGrades(value: number[]) {
+    if (value.length > 4) throw new Error('A pessoa estudante só pode possuir 4 notas de provas.');
+
+    this._examsGrades = value;
+  }
+
+  get worksGrades(): number[] {
+    return this._worksGrades;
+  }
+
+  set worksGrades(value: number[]) {
+    if (value.length > 2) throw new Error('A pessoa estudante só pode possuir 2 notas de trabalhos.');
+
+    this._worksGrades = value;
+  }
+
+  private generateEnrolment (){
+    const id = uuid.v4();
+    return id;
   }
 }
