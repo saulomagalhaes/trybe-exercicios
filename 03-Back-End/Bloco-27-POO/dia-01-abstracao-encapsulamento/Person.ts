@@ -1,6 +1,6 @@
 import uuid from "uuid";
 
-class Person {
+abstract class Person {
   private _name: string;
   private _birthDate: Date;
 
@@ -27,7 +27,7 @@ class Person {
     this._birthDate = value;
   }
 
-  getAge(value: Date): number {
+  static getAge(value: Date): number {
     const diff = Math.abs(new Date().getTime() - value.getTime()); // diferença em milissegundos entre a data atual e a data passada por parâmetro
     const yearMs = 31536000000; // 1 ano = 31536000000 milissegundos
     return Math.floor(diff / yearMs);
@@ -42,7 +42,7 @@ class Person {
   private validateBirthDate(birthDate: Date): void {
     if (birthDate.getTime() > new Date().getTime())
       throw new Error("A data de nascimento não pode ser uma data no futuro.");
-    if (this.getAge(birthDate) > 120)
+    if (Person.getAge(birthDate) > 120)
       throw new Error("A idade deve ser menor do que 120 anos");
   }
 }
